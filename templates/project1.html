@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>My Bootstrap Website</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mendres, Von</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#learn">Steps Toward My Goal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#questions">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#instructors">Role Models</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start pb-0">
+      <div class="container">
+        <div class="d-sm-flex align-items-center">
+          <div>
+            <h1>
+              My Dream: Be a
+              <span class="text-warning">Software Engineer</span>
+            </h1>
+            <p class="lead my-4">
+              Hey what's up. It's me yow boy, Breznev. I want to work at a Silicon Valley Company
+              someday. My Ultimate goal is to have my own startup company because I want to be a
+              boss, not a slave to a boss :).
+            </p>
+            <button
+              class="btn btn-primary btn-lg mb-5"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll">
+              Press Me If You Think I'm Cute
+            </button>
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src="{{ showcase }}" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3">Receive Random As F*** Emails From Me</h3>
+
+          <div class="input-group mb-3 news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-dark bt-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md mb-1">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Virtual</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo culpa facilis maxime
+                  aliquam. Similique, at?
+                </p>
+                <a href="#" class="btn btn-primary">Gwapo Ko</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md mb-1">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hybrid</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo culpa facilis maxime
+                  aliquam. Similique, at?
+                </p>
+                <a href="#" class="btn btn-dark">Gwapo Ko</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md mb-1">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">In Person</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo culpa facilis maxime
+                  aliquam. Similique, at?
+                </p>
+                <a href="#" class="btn btn-primary">Gwapo Ko</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="{{ fundamentals }}" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn the Fundamentals</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam officiis doloremque
+              quaerat. Architecto, nobis ducimus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum totam officiis voluptates
+              assumenda odio suscipit, aliquam vitae cupiditate dicta rerum architecto in
+              consectetur optio iusto facilis dolore quis quidem earum!
+            </p>
+            <a href="#" class="btn btn-light mt-3"
+              ><i class="bi bi-chevron-right"></i>Gwapo Gihapon Ko</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5 text-light">
+            <h2>Learn React</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam officiis doloremque
+              quaerat. Architecto, nobis ducimus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum totam officiis voluptates
+              assumenda odio suscipit, aliquam vitae cupiditate dicta rerum architecto in
+              consectetur optio iusto facilis dolore quis quidem earum!
+            </p>
+            <a href="#" class="btn btn-light mt-3"
+              ><i class="bi bi-chevron-right"></i>Gwapo Gihapon Ko</a
+            >
+          </div>
+          <div class="col-md">
+            <img src="{{ react }}" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container py-3">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne">
+                Why are you so cute?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong>
+                It is shown by default, until the collapse plugin adds the appropriate classes that
+                we use to style each element. These classes control the overall appearance, as well
+                as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just
+                about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo">
+                What so yummy?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong>
+                It is hidden by default, until the collapse plugin adds the appropriate classes that
+                we use to style each element. These classes control the overall appearance, as well
+                as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just
+                about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree">
+                Why so handsome?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong>
+                It is hidden by default, until the collapse plugin adds the appropriate classes that
+                we use to style each element. These classes control the overall appearance, as well
+                as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just
+                about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors -->
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container py-3">
+        <h2 class="text-center text-white">People I look up to</h2>
+        <p class="lead text-center text-white mb-5">
+          The people I look up to are the people whom I consider brilliant. They have made
+          revolutionary changes to the industry and have unknowingly transformed the world. They are
+          experts in their own field and I aspire to someday step on the same pedestal as they did.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="{{ elon }}" class="img-fluid rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3">Elon Musk</h3>
+                <p class="card-text">
+                  This man does not need any introduction. He is the driving force of the company
+                  that single-handedly transformed the entire automotive industry towards
+                  sustainable energy.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="{{ mark }}" class="img-fluid rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3">Mark Zuckerberg</h3>
+                <p class="card-text">
+                  A lot of people clown on him. I did to. Once I got to know Mr. Zuckerberg and saw
+                  the way he thinks, he amazed me. He is one of the people whom I can consider
+                  brilliant.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="{{ david }}" class="img-fluid rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3">David Malan</h3>
+                <p class="card-text">
+                  Mr. Malan is the Professor of the world's biggest & best introductory course to
+                  CompSci, CS50 by Harvard University. If given the chance, I would love to meet him
+                  one day.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="{{ andrej }}" class="img-fluid rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3">Andrej Karpathy</h3>
+                <p class="card-text">
+                  Mr. Karpathy is the head of Artificial Intelligence at Tesla. He leads the team
+                  that makes the world's most advanced mass-deployed Self Driving System in a car.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span>
+                69 Main Street, Von Gwapo Building, PH 6969
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Business Phone:</span>
+                (+63) 906 037 7626
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Backup Phone:</span>
+                (+63) 933 519 4978
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Business Email:</span>
+                vonnyyummy@gwapo.ko
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Time Availability:</span>
+                Always busy, hehe
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <img src="{{ la }}" alt="Map of Los Angeles" class="img-fluid img-thumbnail" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &COPY; Von Mendres August 2022 Frontend Project</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and you will be rich</p>
+            <form action="">
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">First Name:</label>
+                <input type="text" id="first-name" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" id="last-name" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" id="email" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" id="phone" class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script for Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

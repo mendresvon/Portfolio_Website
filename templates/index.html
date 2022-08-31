@@ -1,0 +1,196 @@
+{% extends "base.html" %} {% block head %}<title>Portfolio: Von Mendres</title>{% endblock %} {%
+block body %}
+
+<!-- List of Projects as of August 2022 -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark py-3">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mendres, Von</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#webapps">My Best Projects So Far</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Showcase -->
+<section class="bg-dark text-light p-5 text-center text-sm-start pb-0">
+  <div class="container">
+    <div class="d-sm-flex align-items-center">
+      <div>
+        <h1>My Dream: Be a <span class="text-warning">Software Engineer</span></h1>
+        <p class="lead my-4">
+          Hey what's up. It's me yow boy, Breznev. I want to work at a Silicon Valley Company
+          someday. My Ultimate goal is to have my own startup company because I want to be a boss,
+          not a slave to a boss :).
+        </p>
+        <button
+          class="btn btn-primary btn-lg mb-5"
+          data-bs-toggle="modal"
+          data-bs-target="#message">
+          I DARE YOU TO PRESS THIS BUTTON
+        </button>
+      </div>
+      <img class="img-fluid w-50 d-none d-sm-block" src="{{ showcase }}" alt="A picture " />
+    </div>
+  </div>
+</section>
+
+<!-- Project Showcase  -->
+<section class="p-5 bg-white">
+  <section id="webapps" class="p-5 mb-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="{{ fundamentals }}" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md p-5">
+          <h1>Web Apps</h1>
+          <p class="lead">
+            The projects you can see below are some of the first web apps that I have deployed
+            through heroku
+          </p>
+          <p>
+            Do remember that I am only a beginner and have no extensive knowledge of front-end,
+            back-end development, and full-stack development.
+          </p>
+          <a
+            href="https://blogs.mtdv.me/blog/posts/CS50"
+            target="_blank"
+            class="btn btn-danger mt-3"
+            ><i class="bi bi-chevron-down"></i>See Projects</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md mb-1">
+        <div class="card bg-dark text-light" id="project1">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">Task Manager App</h3>
+            <p class="card-text">
+              This is a simple task manager app that I deployed through Heroku and named "Breznev
+              Task Manager". It's pretty bare-bones and it is one of the most basic task managers
+              you'll find. All it can do is literally just add and remove tasks.
+            </p>
+            <a
+              href="https://breznev-task-manager.herokuapp.com/"
+              target="_blank"
+              class="btn btn-primary"
+              >Visit Project</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md mb-1">
+        <div class="card bg-secondary text-light">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">Notes App w/ Login Feature</h3>
+            <p class="card-text">
+              This is a more complex project compared to the Task Manager One. This project
+              implements a sign-up along with a log-in feature. It's a relatively simple note app
+              but it starts to implement bootstrap elements & features.
+            </p>
+            <a href="https://breznev-notes.herokuapp.com/login" target="_blank" class="btn btn-dark"
+              >Visit Project</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md mb-1">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">Bootstrap Website</h3>
+            <p class="card-text">
+              This is my firt responsive web page project built with the Bootstrap CSS framework. I
+              built it with the help of a tutorial I found online and I am currently using it as a
+              template for this Final Project. It's not much but it's the prettiestt site I've built
+              so far.
+            </p>
+            <form action="/" method="POST" target="_blank">
+              <button class="btn btn-primary">Visit Project</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="message"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLongTitle"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">My Way of Thanking CS50</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="m-0">August 22, 2022</p>
+        <p class="m-0">Talisay City, Cebu</p>
+        <p class="m-0 mb-5">Philippines 6045</p>
+        <label class="col-form-label mb-3">Hello Sir David,</label>
+        <p class="mb-4">
+          I would love to take this opportunity to thank you and all of the CS50 team for designing
+          and building this amazing course. Thank you Sir David Malan for having done an amazing job
+          in teaching computer science. I know that many people have already said this to you but
+          you, Sir David, are one of the best teachers I could have ever hoped for. You make
+          learning fun, engaging, exciting, and I couldn't help but wish that I was actually there.
+          To be honest, I found Computer Science daunting at first. I thought that it would be too
+          hard for me. However, through your lectures coupled with your radiating enthusiasm topped
+          with your oozing passion to teach, I was moved. I came to love Computer Science due to the
+          fact that I got to experience this amazing opportunity to learn from an equally amazing
+          teacher like you.
+        </p>
+        <p class="mb-4">
+          I am a learner from the Philippines and I'm going to college soon! Yay! I recently
+          graduated highschool and I found a scholarship to study abroad in Taiwan. I plan on taking
+          a double major in Mechanical Engineering and Computer Science. I know.... it sounds like
+          suicide xD. However, I am actually serious with this. I mean, I wish that I could go to
+          Harvard and actually meet you but that boat has already sailed. That said, the scholarship
+          that I have ain't too bad. I basically get to study for cheap. AND earn two majors! I want
+          to someday work at Tesla or any of the Silicon Valley Companies. If given the chance, I
+          would also love to be a staff at Harvard University's CS50 Course hehe.
+        </p>
+        <p class="mb-5">
+          Once again, I would love to thank you. You have changed my life more than you can ever
+          imagine. Through CS50, I now have a path that I would actually love to take. I would make
+          it my life mission to meet you one day. One day. Some day. Thank you so much from the
+          deepest depths of my heart. I know you probably won't be able to read this due to the
+          number of projects you receive, but I'll remain hopeful. In case you read this, I'll leave
+          my email and phone number at the bottom of the page :). Once again, thank you Harvard,
+          thank you CS50, and most especially, THANK YOU SIR DAVID.
+        </p>
+        <p class="m-0">Love from the Philippines,</p>
+        <p class="m-0">Von Breznev A. Mendres</p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+            THANK YOU CS50!
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
